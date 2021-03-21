@@ -1,0 +1,143 @@
+.footer {
+  background-color: var(--background-dark);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__address {
+    margin-bottom: 9px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+
+    color: var(--text-white-color);
+  }
+
+  &__item {
+    margin-top: 9px;
+  }
+
+  &__contacts {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+
+    color: var(--link-footer-color);
+
+    transition: color 250ms var(--func-cubic);
+  }
+
+  &__contacts:hover,
+  &__contacts:focus {
+    color: var(--link-hover-color);
+  }
+}
+
+.footer-title {
+  margin-top: 12px;
+  margin-bottom: 20px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--text-white-color);
+}
+
+.footer-social {
+
+  &__list {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--text-white-color);
+
+    transition: background-color 250ms var(--func-cubic),
+      color 250ms var(--func-cubic);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    background-color: var(--link-hover-color);
+    color: var(--text-white-color);
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}
+
+.form-subscription {
+  display: flex;
+
+  &__input-email {
+    padding-left: 16px;
+
+    width: 358px;
+    height: 50px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
+
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+
+    color: var(--link-footer-color);
+    background-color: transparent;
+  }
+
+  &__input-email:not(::placeholder) {
+    background-color: transparent;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+
+    width: 200px;
+    height: 50px;
+
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+
+    color: var(--text-white-color);
+    background-color: var(--brand-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 1px solid var(--brand-color);
+  }
+
+  &__icon {
+    margin-left: 10px;
+    fill: currentColor;
+  }
+}
