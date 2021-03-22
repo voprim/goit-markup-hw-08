@@ -6,9 +6,9 @@
     padding-bottom: 94px;
   }
 
-  &__list {
-  display: flex;
-  }
+  // &__list {
+  // display: flex;
+  // }
 
   &__item {
     border-bottom-left-radius: 4px;
@@ -46,11 +46,9 @@
     letter-spacing: 0.03em;
     color: var(--text-main-color);
   }
-
 }
 
 .social {
-
   &__list {
     display: flex;
   }

@@ -1,27 +1,35 @@
 .container {
-  width: 1200px;
+  // width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-
   margin-left: auto;
   margin-right: auto;
-}
 
-.section {
-  
-  &__title {
-  margin-bottom: 50px;
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
 
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--text-bold-color);
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
   }
 }
 
+.section {
+  &__title {
+    margin-bottom: 50px;
 
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-bold-color);
+  }
+}
 
 .visually-hidden {
   position: absolute;
