@@ -16,10 +16,10 @@
   <body>
     <!-- навигация в верху страницы-->
     <header class="page-header">
-      <div class="container">
+      <div class="container container__site-nav">
         <nav class="site-nav">
-          <a href="./index.html" class="logo-link logo-link--header"
-            ><span class="logo-link__part">Web</span>Studio</a
+          <a href="./index.html" class="logo-link logo-link--header">
+            <span class="logo-link__part">Web</span>Studio</a
           >
           <ul class="nav-list">
             <li class="nav-list__item">
@@ -61,6 +61,22 @@
             </li>
           </ul>
         </nav>
+        <button
+          class="mobile-menu__toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="40"
+            height="40"
+            fill="currentColor"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              href="./images/icons/symbol-defs.svg#icon-burger-button-menu"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -68,9 +84,7 @@
       <!-- заказать услугу -->
       <section class="tagline">
         <div class="container">
-          <h1 class="tagline__title">
-            Эффективные решения для вашего бизнеса
-          </h1>
+          <h1 class="tagline__title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="tagline__btn" data-modal-open>
             Заказать услугу
           </button>
@@ -133,9 +147,7 @@
                 <a href="#" class="form-order__link">Условия договора</a>
               </label>
 
-              <button type="submit" class="tagline__btn">
-                Отправить
-              </button>
+              <button type="submit" class="tagline__btn">Отправить</button>
             </form>
           </div>
         </div>
@@ -419,59 +431,39 @@
               </a>
             </li>
             <li class="customers__item">
-              
-                <a href="#" class="customers__link">
-                  <svg class="customers__icon" width="40" height="52">
-                    <use
-                      href="./images/icons/symbol-defs.svg#icon-logo-2"
-                    ></use>
-                  </svg>
-                </a>
-              
+              <a href="#" class="customers__link">
+                <svg class="customers__icon" width="40" height="52">
+                  <use href="./images/icons/symbol-defs.svg#icon-logo-2"></use>
+                </svg>
+              </a>
             </li>
             <li class="customers__item">
-              
-                <a href="#" class="customers__link">
-                  <svg class="customers__icon" width="41" height="43">
-                    <use
-                      href="./images/icons/symbol-defs.svg#icon-logo-3"
-                    ></use>
-                  </svg>
-                </a>
-              
+              <a href="#" class="customers__link">
+                <svg class="customers__icon" width="41" height="43">
+                  <use href="./images/icons/symbol-defs.svg#icon-logo-3"></use>
+                </svg>
+              </a>
             </li>
             <li class="customers__item">
-              
-                <a href="#" class="customers__link">
-                  <svg class="customers__icon" width="80" height="42">
-                    <use
-                      href="./images/icons/symbol-defs.svg#icon-logo-4"
-                    ></use>
-                  </svg>
-                </a>
-             
+              <a href="#" class="customers__link">
+                <svg class="customers__icon" width="80" height="42">
+                  <use href="./images/icons/symbol-defs.svg#icon-logo-4"></use>
+                </svg>
+              </a>
             </li>
             <li class="customers__item">
-              
-                <a href="#" class="customers__link">
-                  <svg class="customers__icon" width="59" height="47">
-                    <use
-                      href="./images/icons/symbol-defs.svg#icon-logo-5"
-                    ></use>
-                  </svg>
-                </a>
-              
+              <a href="#" class="customers__link">
+                <svg class="customers__icon" width="59" height="47">
+                  <use href="./images/icons/symbol-defs.svg#icon-logo-5"></use>
+                </svg>
+              </a>
             </li>
             <li class="customers__item">
-              
-                <a href="#" class="customers__link">
-                  <svg class="customers__icon" width="88" height="45">
-                    <use
-                      href="./images/icons/symbol-defs.svg#icon-logo-6"
-                    ></use>
-                  </svg>
-                </a>
-              
+              <a href="#" class="customers__link">
+                <svg class="customers__icon" width="88" height="45">
+                  <use href="./images/icons/symbol-defs.svg#icon-logo-6"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -491,7 +483,9 @@
             </p>
             <ul>
               <li>
-                <a href="mailto:info@example.com" class="footer-container__contacts"
+                <a
+                  href="mailto:info@example.com"
+                  class="footer-container__contacts"
                   >info@example.com
                 </a>
               </li>
@@ -567,6 +561,63 @@
       </div>
     </footer>
 
+    <div class="mobile-menu__wrapper js-menu-container" id="nav-list">
+      <button class="mobile-menu__toggle js-close-menu">
+        <svg
+          width="40"
+          height="40"
+          fill="currentColor"
+          aria-label="Переключатель мобильного меню"
+        >
+          <use
+            href="./images/icons/symbol-defs.svg#icon-burger-button-close"
+          ></use>
+        </svg>
+      </button>
+
+      <ul class="nav-list__mobile">
+        <li class="nav-list__item">
+          <a href="" class="nav-list__link nav-list__link--current">Студия</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="./portfolio.html" class="nav-list__link">Портфолио</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="" class="nav-list__link">Контакты</a>
+        </li>
+      </ul>
+      <ul class="contacts-list__mobile">
+        <li class="contacts-list__item">
+          <a href="tel:+380961111111" class="contacts-list__link-tel--mobile">
+            +38 096 111 11 11
+          </a>
+        </li>
+        <li class="contacts-list__item">
+          <a
+            href="mailto:info@devstudio.com"
+            class="contacts-list__link-email--mobile"
+          >
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+      <ul class="social-link">
+        <li class="social-link__item">
+          <a href="#" class="social-link__link">Instagram</a>
+        </li>
+        <li class="social-link__item">
+          <a href="#" class="social-link__link">Twitter</a>
+        </li>
+        <li class="social-link__item">
+          <a href="#" class="social-link__link">Facebook</a>
+        </li>
+        <li class="social-link__item">
+          <a href="#" class="social-link__link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
