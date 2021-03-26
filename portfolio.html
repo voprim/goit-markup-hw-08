@@ -17,17 +17,19 @@
   <body>
     <!-- навигация в верху страницы, такая же шапка, как на главной (студия) -->
     <header class="page-header">
-      <div class="container">
+      <div class="container container__site-nav">
         <nav class="site-nav">
-          <a href="./index.html" class="logo-link logo-link--header"
-            ><span class="logo-link__part">Web</span>Studio</a
+          <a href="./index.html" class="logo-link logo-link--header">
+            <span class="logo-link__part">Web</span>Studio</a
           >
           <ul class="nav-list">
             <li class="nav-list__item">
-              <a href="/index.html" class="nav-list__link">Студия</a>
+              <a href="./index.html" class="nav-list__link">Студия</a>
             </li>
             <li class="nav-list__item">
-              <a href="#" class="nav-list__link nav-list__link--current"
+              <a
+                href="./portfolio.html"
+                class="nav-list__link nav-list__link--current"
                 >Портфолио</a
               >
             </li>
@@ -62,6 +64,22 @@
             </li>
           </ul>
         </nav>
+        <button
+          class="mobile-menu__toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="40"
+            height="40"
+            fill="currentColor"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              href="./images/icons/symbol-defs.svg#icon-burger-button-menu"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -74,22 +92,16 @@
             <button type="button" class="filters__btn">Все</button>
           </li>
           <li class="filters__item">
-            <button type="button" class="filters__btn">
-              Веб-сайты
-            </button>
+            <button type="button" class="filters__btn">Веб-сайты</button>
           </li>
           <li class="filters__item">
-            <button type="button" class="filters__btn">
-              Приложения
-            </button>
+            <button type="button" class="filters__btn">Приложения</button>
           </li>
           <li class="filters__item">
             <button type="button" class="filters__btn">Дизайн</button>
           </li>
           <li class="filters__item">
-            <button type="button" class="filters__btn">
-              Маркетинг
-            </button>
+            <button type="button" class="filters__btn">Маркетинг</button>
           </li>
         </ul>
 
@@ -286,7 +298,9 @@
             </p>
             <ul>
               <li>
-                <a href="mailto:info@example.com" class="footer-container__contacts"
+                <a
+                  href="mailto:info@example.com"
+                  class="footer-container__contacts"
                   >info@example.com
                 </a>
               </li>
@@ -298,7 +312,7 @@
             </ul>
           </address>
         </div>
-        <div>
+        <div class="footer-social__wrapper">
           <h3 class="footer-title">Присоединяйтесь</h3>
           <ul class="footer-social__list">
             <li class="footer-social__item">
@@ -361,5 +375,63 @@
         </div>
       </div>
     </footer>
+
+    <div class="mobile-menu__wrapper js-menu-container" id="nav-list">
+      <button class="mobile-menu__toggle js-close-menu">
+        <svg
+          width="40"
+          height="40"
+          fill="currentColor"
+          aria-label="Переключатель мобильного меню"
+        >
+          <use
+            href="./images/icons/symbol-defs.svg#icon-burger-button-close"
+          ></use>
+        </svg>
+      </button>
+
+      <ul class="nav-list__mobile">
+        <li class="nav-list__item">
+          <a href="" class="nav-list__link nav-list__link--current">Студия</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="./portfolio.html" class="nav-list__link">Портфолио</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="" class="nav-list__link">Контакты</a>
+        </li>
+      </ul>
+      <ul class="contacts-list__mobile">
+        <li class="contacts-list__item">
+          <a href="tel:+380961111111" class="contacts-list__link-tel--mobile">
+            +38 096 111 11 11
+          </a>
+        </li>
+        <li class="contacts-list__item">
+          <a
+            href="mailto:info@devstudio.com"
+            class="contacts-list__link-email--mobile"
+          >
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+      <ul class="social-link">
+        <li class="social-link__item">
+          <a href="#" class="social-link__link">Instagram</a>
+        </li>
+        <li class="social-link__item">
+          <a href="#" class="social-link__link">Twitter</a>
+        </li>
+        <li class="social-link__item">
+          <a href="#" class="social-link__link">Facebook</a>
+        </li>
+        <li class="social-link__item">
+          <a href="#" class="social-link__link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

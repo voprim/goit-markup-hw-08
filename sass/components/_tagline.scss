@@ -23,8 +23,8 @@
     margin-right: auto;
 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
+    font-size: 26px;
+    line-height: 42px;
     letter-spacing: 0.06em;
 
     text-transform: uppercase;
@@ -50,5 +50,14 @@
 
   &__btn:hover {
     cursor: pointer;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .tagline {
+    &__title {
+      font-size: 44px;
+      line-height: 60px;
+    }
   }
 }
