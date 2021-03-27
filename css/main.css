@@ -923,12 +923,20 @@ summary {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--background-dark);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/back-header.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/back-header.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/back-header@2x.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/back-header@2x.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
+  /* Переопределяем путь к 2x изображению
+   если плотность экрана как минимум 2 */
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .tagline {
+    background-image: url(../images/back-header@2x.jpg);
+  }
 }
 
 .tagline__title {
@@ -1106,6 +1114,23 @@ summary {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
+.busy__thumb {
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1200px) {
+  .busy__thumb {
+    height: 294px;
+  }
+}
+
+.busy__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .team {
   background-color: var(--background-light);
 }
@@ -1123,6 +1148,30 @@ summary {
 
 .team__item:not(:last-child) {
   margin-bottom: 30px;
+}
+
+.team__thumb {
+  height: 460px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .team__thumb {
+    height: 374px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__thumb {
+    height: 260px;
+  }
+}
+
+.team__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -1690,7 +1739,15 @@ summary {
 
 .card__thumb {
   position: relative;
+  height: 294px;
   overflow: hidden;
+}
+
+.card__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card__text-overlay {
@@ -1715,6 +1772,9 @@ summary {
 }
 
 .card__text-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }

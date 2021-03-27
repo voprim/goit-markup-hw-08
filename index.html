@@ -63,11 +63,7 @@
             </li>
           </ul>
         </nav>
-        <button
-          class="mobile-menu__toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
+        <button class="mobile-menu__toggle js-open-menu" aria-expanded="false">
           <svg
             width="40"
             height="40"
@@ -217,15 +213,39 @@
         <h2 class="section__title">Чем мы занимаемся</h2>
         <ul class="busy__list">
           <li class="busy__item">
-            <img src="./images/pc-graph.jpg" alt="Разработка" />
+            <div class="busy__thumb">
+              <img
+                class="busy__img"
+                srcset="./images/pc-graph.jpg 1x, ./images/pc-graph@2x.jpg 2x"
+                src="./images/pc-graph.jpg"
+                alt="Разработка"
+              />
+            </div>
             <p class="busy__text">Десктопные приложения</p>
           </li>
           <li class="busy__item">
-            <img src="./images/mob-pc.jpg" alt="Приложения" />
+            <div class="busy__thumb">
+              <img
+                class="busy__img"
+                srcset="./images/mob-pc.jpg 1x, ./images/mob-pc@2x.jpg 2x"
+                src="./images/mob-pc.jpg"
+                alt="Приложения"
+              />
+            </div>
             <p class="busy__text">Мобильные приложения</p>
           </li>
           <li class="busy__item">
-            <img src="./images/pocket-color.jpg" alt="Дизайн" />
+            <div class="busy__thumb">
+              <img
+                class="busy__img"
+                srcset="
+                  ./images/pocket-color.jpg    1x,
+                  ./images/pocket-color@2x.jpg 2x
+                "
+                src="./images/pocket-color.jpg"
+                alt="Дизайн"
+              />
+            </div>
             <p class="busy__text">Дизайнерские решения</p>
           </li>
         </ul>
@@ -237,7 +257,18 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img src="./images/idemyanenko.jpg" alt="Игорь Демьяненко" />
+              <div class="team__thumb">
+                <img
+                  class="team__img"
+                  srcset="
+                    ./images/idemyanenko.jpg    1x,
+                    ./images/idemyanenko@2x.jpg 2x
+                  "
+                  src="./images/idemyanenko.jpg"
+                  alt="Игорь Демьяненко"
+                  loading="lazy"
+                />
+              </div>
               <div class="team__box">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__position">Product Designer</p>
@@ -282,7 +313,15 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/orepina.jpg" alt="Ольга Репина" />
+              <div class="team__thumb">
+                <img
+                  class="team__img"
+                  srcset="./images/orepina.jpg 1x, ./images/orepina@2x.jpg 2x"
+                  src="./images/orepina.jpg"
+                  alt="Ольга Репина"
+                  loading="lazy"
+                />
+              </div>
               <div class="team__box">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__position">Frontend Developer</p>
@@ -327,7 +366,15 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/ntarasov.jpg" alt="Николай Тарасов" />
+              <div class="team__thumb">
+                <img
+                  class="team__img"
+                  srcset="./images/ntarasov.jpg 1x, ./images/ntarasov@2x.jpg 2x"
+                  src="./images/ntarasov.jpg"
+                  alt="Николай Тарасов"
+                  loading="lazy"
+                />
+              </div>
               <div class="team__box">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__position">Marketing</p>
@@ -372,7 +419,15 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/mermakov.jpg" alt="Михаил Ермаков" />
+              <div class="team__thumb">
+                <img
+                  class="team__img"
+                  srcset="./images/mermakov.jpg 1x, ./images/orepina@2x.jpg 2x"
+                  src="./images/mermakov.jpg"
+                  alt="Михаил Ермаков"
+                  loading="lazy"
+                />
+              </div>
               <div class="team__box">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__position">UI Designer</p>
