@@ -1,5 +1,8 @@
 .tagline {
+  display: flex;
+  align-items: center;
   max-width: 1600px;
+  max-height: 400px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
@@ -18,7 +21,7 @@
   text-align: center;
 
   &__title {
-    width: 696px;
+    // width: 696px;
     margin-left: auto;
     margin-right: auto;
 
@@ -56,6 +59,18 @@
 @media screen and (min-width: $tablet) {
   .tagline {
     &__title {
+      width: 450px;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .tagline {
+    max-height: 600px;
+
+    &__title {
+      width: 696px;
+
       font-size: 44px;
       line-height: 60px;
     }

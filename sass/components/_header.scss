@@ -2,10 +2,12 @@
   border-bottom: 1px solid #ececec;
 }
 
-@media screen and (max-width: $mobile) {
-  .container__site-nav {
-    display: flex;
-    justify-content: space-between;
+.container__site-nav {
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
   }
 }
 
@@ -85,9 +87,6 @@
 }
 
 .contacts-list {
-  //
-  //
-
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
