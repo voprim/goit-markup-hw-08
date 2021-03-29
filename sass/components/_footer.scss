@@ -43,7 +43,7 @@
 }
 
 .footer-title {
-  margin-top: 12px;
+  // margin-top: 12px;
   margin-bottom: 20px;
 
   font-weight: bold;
@@ -170,15 +170,9 @@
     }
   }
 
-  // .footer-social {
-  //   &__wrapper {
-  //     margin-left: 165px;
-  //   }
+  // .footer-title {
+  //   margin-top: 0px;
   // }
-
-  .footer-title {
-    margin-top: 0px;
-  }
 
   .footer-social {
     &__wrapper {
@@ -211,6 +205,10 @@
     &__btn {
       margin-left: 12px;
     }
+  }
+
+  .footer-title {
+    margin-top: 12px;
   }
 
   .footer-social {

@@ -46,11 +46,14 @@
   &__link {
     display: inline-block;
     padding-top: 32px;
-    padding-bottom: 32px;
+    // padding-bottom: 32px;
     color: var(--text-bold-color);
 
     transition: color 250ms var(--func-cubic);
 
+    @media screen and (min-width: $desktop) {
+      padding-bottom: 32px;
+    }
     &:hover,
     &:focus {
       color: var(--link-hover-color);

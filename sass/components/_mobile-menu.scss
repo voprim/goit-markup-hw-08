@@ -61,10 +61,14 @@
     line-height: 47px;
     letter-spacing: 0.02em;
   }
+  @media screen and (max-width: 767px) {
+    &__item:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
 
   &__link {
     @media screen and (max-width: 767px) {
-      padding-bottom: 32px;
       color: var(--text-bold-color);
 
       transition: color 250ms var(--func-cubic);
